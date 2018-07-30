@@ -4,6 +4,9 @@ import Snackbar from 'material-ui/Snackbar';
 const styles = {
     message: {
         textAlign: "center"
+    },
+    MessageBar: {
+        zIndex: 1500
     }
 }
 
@@ -33,6 +36,7 @@ class MessageBar extends Component {
     render(){
         return(
             <Snackbar
+                style={styles.MessageBar}
                 anchorOrigin={{
                     vertical: 'top',
                     horizontal: 'center',
